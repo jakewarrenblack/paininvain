@@ -10,7 +10,6 @@ html, body {
 
 img{
   width:100%;
-  height:auto;
 }
 
 .nav-link {
@@ -227,7 +226,7 @@ iframe:hover {
 
 .hero-text {
   font-family: "EB Garamond";
-  font-size: 1.75vh;
+  font-size: 25px;
   line-height: 45px;
   text-align: center;
   position: absolute;
