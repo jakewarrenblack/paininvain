@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img{
+  width:100%;
+}
+
 .nav-link {
   font-size: 20px;
 }
