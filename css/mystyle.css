@@ -2,8 +2,10 @@
   max-width: 12vw;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 img{
@@ -33,6 +35,11 @@ footer h3 {
   font-family: "EB Garamond, sans-serif";
   font-size: 60px;
   font-weight: 800;
+}
+
+.myimg{
+  max-width:100%;
+  height:auto;
 }
 
 .socials i:hover {
