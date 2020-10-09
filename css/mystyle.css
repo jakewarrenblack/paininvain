@@ -1,0 +1,268 @@
+.logo-contain {
+  max-width: 12vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.footer {
+  background: white !important;
+  padding: 10%;
+}
+
+footer h3 {
+  font-family: "Garamond";
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.our-music {
+  background: white;
+  padding: 20px;
+  font-family: "EB Garamond, sans-serif";
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.socials i:hover {
+  filter: brightness(2);
+  transform: scale(1.2);
+}
+
+.backTop i:hover {
+  filter: brightness(2);
+  transform: scale(1.2);
+}
+
+.backTop i {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: crimson;
+  border-radius: 15%;
+  padding: 5px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  right: 2px;
+  bottom: 50%;
+  position: fixed;
+  z-index: 2;
+  color: crimson;
+  opacity: 0.75;
+}
+
+.socials a {
+  color: crimson;
+}
+
+.socials i:hover {
+  cursor: pointer;
+}
+
+.socials a:nth-child(3) {
+  margin-left: 2px;
+}
+
+.socials i {
+  padding: 5px;
+  font-size: 40px;
+}
+
+.backTop i {
+  font-size: 50px;
+}
+
+.padForm {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.music-row {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.container-fluid {
+  background: black;
+}
+
+.container {
+  background: white;
+}
+
+.videos-title {
+  background: white;
+}
+
+.video-container {
+  padding-bottom: 10%;
+}
+
+.navbar {
+  background: white;
+  color: black;
+  font-family: "EB Garamond";
+}
+
+.formBtn {
+  background: crimson;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 244px;
+  height: 50px;
+  font-family: "EB Garamond";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: "EB Garamond";
+}
+
+.wrap-contact2 {
+  display: flex;
+  align-self: center;
+  padding: 5%;
+}
+
+.navbar * {
+  color: black;
+}
+.navbar *:hover {
+  color: crimson;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: crimson;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.myCard {
+  background: black;
+  outline: 1px white;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.myCard:hover {
+  transform: scale(1.05);
+}
+
+.myCardBody {
+  background: white;
+}
+
+.btn-crimson {
+  background: crimson;
+  outline: none;
+  border: none;
+}
+
+.videos {
+  background: white;
+}
+
+iframe {
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  filter: brightness(0.4);
+  transition: filter 0.5s;
+}
+
+iframe:hover {
+  filter: brightness(1);
+}
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.87)),
+    url("../img/crowd.jpg");
+
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+
+  color: white;
+}
+
+.hero-text {
+  font-family: "EB Garamond";
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contact2-form-title {
+  font-family: "EB Garamond";
+}
+
+form {
+  font-family: "EB Garamond";
+}
+
+@media only screen and (max-width: 600px) {
+  .music-row {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .myCard {
+    background: black;
+    outline: 1px white;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+    padding-bottom: 10%;
+  }
+
+  .myVideoCard {
+    padding-bottom: 10%;
+  }
+
+  .wrap-contact2 {
+    max-width: 75vw;
+  }
+
+  .hero-text {
+    font-family: "EB Garamond";
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
