@@ -272,9 +272,3 @@ form {
   }
 }
 
-
-@media only screen and (max-width: 828px) {
-*{
-  color:red;
-}
-}
