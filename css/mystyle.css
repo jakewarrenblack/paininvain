@@ -261,8 +261,8 @@ form {
 
   .hero-text {
     font-family: "EB Garamond";
-    font-size: 1.8vh;
-    /* line-height: 45px; */
+    font-size: 4vh;
+    line-height: 45px;
     text-align: center;
     position: absolute;
     top: 20%;
