@@ -15,6 +15,7 @@ img{
 #video-bg{
   width:100%;
   height:auto;
+  transform:scale(1.02);
 }
 
 .nav-link {
@@ -289,6 +290,10 @@ form {
   .socials {
     right: 15px;
 
+  }
+
+  #video-bg{
+    transform:scale(1.08);
   }
 }
 
