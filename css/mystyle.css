@@ -12,7 +12,6 @@ img{
   width:100%;
 }
 
-<<<<<<< HEAD
 #video-bg{
   width:100%;
   height:auto;
@@ -22,10 +21,6 @@ img{
 .nav-link {
   font-size: 30px;
   text-transform: uppercase;
-=======
-.nav-link {
-  font-size: 20px;
->>>>>>> parent of 7dd2d47... Updated from Publii
 }
 
 .footer {
@@ -61,11 +56,7 @@ footer h3 {
 .backTop i {
   position: fixed;
   bottom: 5px;
-<<<<<<< HEAD
   right: 20px;
-=======
-  right: 5px;
->>>>>>> parent of 7dd2d47... Updated from Publii
   color: crimson;
   border-radius: 15%;
   padding: 5px;
@@ -76,11 +67,7 @@ footer h3 {
 .socials {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   right: 20px;
-=======
-  right: 2px;
->>>>>>> parent of 7dd2d47... Updated from Publii
   bottom: 50%;
   position: fixed;
   z-index: 2;
@@ -290,7 +277,6 @@ form {
     padding-left: 5%;
     padding-right: 5%;
   }
-<<<<<<< HEAD
 
   .nav-link {
     font-size: 20px;
@@ -305,7 +291,5 @@ form {
     right: 15px;
 
   }
-=======
->>>>>>> parent of 7dd2d47... Updated from Publii
 }
 
