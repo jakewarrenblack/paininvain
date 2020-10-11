@@ -12,8 +12,15 @@ img{
   width:100%;
 }
 
+#video-bg{
+  width:100%;
+  height:auto;
+  zoom:2.5;
+}
+
 .nav-link {
-  font-size: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -49,7 +56,7 @@ footer h3 {
 .backTop i {
   position: fixed;
   bottom: 5px;
-  right: 5px;
+  right: 20px;
   color: crimson;
   border-radius: 15%;
   padding: 5px;
@@ -60,7 +67,7 @@ footer h3 {
 .socials {
   display: flex;
   flex-direction: column;
-  right: 2px;
+  right: 20px;
   bottom: 50%;
   position: fixed;
   z-index: 2;
@@ -269,6 +276,20 @@ form {
     color: white;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .backTop i {
+    right: 15px;
+
+  }
+  
+  .socials {
+    right: 15px;
+
   }
 }
 
