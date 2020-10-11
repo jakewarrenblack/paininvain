@@ -5,9 +5,9 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+/* @font-face {
+  font-family: "EB Garamond";
+  src: url('../fonts/poppins/"EB Garamond".ttf'); 
 }
 
 @font-face {
@@ -18,7 +18,7 @@
 @font-face {
   font-family: Poppins-Bold;
   src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
+} */
 
 
 
@@ -34,12 +34,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: "EB Garamond", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: "EB Garamond";
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: "EB Garamond";
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -202,7 +202,7 @@ iframe {
   display: block;
   width: 100%;
 
-  font-family: Poppins-Regular;
+  font-family: "EB Garamond";
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -247,7 +247,7 @@ iframe {
   top: 0px;
   left: 0;
 
-  font-family: Poppins-Regular;
+  font-family: "EB Garamond";
   font-size: 13px;
   color: #999999;
   line-height: 1.2;
@@ -398,7 +398,7 @@ textarea.input2 + .focus-input2::after {
   right: 0px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: "EB Garamond";
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
