@@ -365,6 +365,10 @@ form {
     padding-bottom: 10%;
   }
 
+  .socials {
+    right: 8px;
+  }
+
   .overlay a {
     font-size: 20px;
   }
