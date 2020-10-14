@@ -120,7 +120,7 @@ footer h3 {
   position: fixed;
   bottom: 5px;
   right: 20px;
-  color: crimson;
+  color: #8b0000;
   border-radius: 15%;
   padding: 5px;
   z-index: 1;
@@ -134,12 +134,12 @@ footer h3 {
   bottom: 50%;
   position: fixed;
   z-index: 2;
-  color: crimson;
+  color: #8b0000;
   opacity: 0.75;
 }
 
 .socials a {
-  color: crimson;
+  color: #8b0000;
 }
 
 .socials i:hover {
@@ -192,7 +192,7 @@ footer h3 {
 }
 
 .formBtn {
-  background: crimson;
+  background: #8b0000;
 
   display: flex;
   justify-content: center;
@@ -221,11 +221,11 @@ h1 {
   color: black;
 }
 .navbar *:hover {
-  color: crimson;
+  color: #8b0000;
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: crimson;
+  border-color: #8b0000;
 }
 /* Setting the stroke to green using rgb values (0, 128, 0) */
 
@@ -247,8 +247,8 @@ h1 {
   background: white;
 }
 
-.btn-crimson {
-  background: crimson;
+.btn-#8B0000 {
+  background: #8b0000;
   outline: none;
   border: none;
 }
