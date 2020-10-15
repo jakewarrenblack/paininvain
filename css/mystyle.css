@@ -390,9 +390,13 @@ form {
     max-width: 75vw;
   }
 
+  .hero-title {
+    top: 6%;
+  }
+
   .hero-text {
     font-family: "EB Garamond";
-    font-size: 3vh;
+    font-size: 2.5vh;
     line-height: 45px;
     text-align: center;
     position: absolute;
