@@ -376,7 +376,7 @@ form {
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
-    right: 35px;
+    right: 8px;
   }
 
   .myCard {
@@ -407,7 +407,7 @@ form {
   }
 
   .backTop i {
-    right: 15px;
+    right: 8px;
   }
 
   #video-bg {
