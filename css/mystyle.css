@@ -99,6 +99,19 @@ footer h3 {
   padding-bottom: 10%;
 }
 
+.thanks {
+  height: 100vh;
+}
+
+.thanksh1 {
+  color: white;
+  margin-bottom: 5%;
+}
+
+.myButton {
+  background: Red;
+}
+
 .our-music {
   background: white;
   padding: 20px;
@@ -106,6 +119,15 @@ footer h3 {
   font-size: 60px;
   font-weight: 800;
 }
+
+.our-merch {
+  background: black;
+  padding: 20px;
+  font-family: "EB Garamond, sans-serif";
+  font-size: 60px;
+  font-weight: 800;
+}
+
 .socials i:hover {
   filter: brightness(2);
   transform: scale(1.2);
@@ -125,6 +147,12 @@ footer h3 {
   padding: 5px;
   z-index: 1;
   opacity: 0.5;
+}
+
+.merchRow {
+  margin-top: 5%;
+  background: black;
+  color: white;
 }
 
 .socials {
