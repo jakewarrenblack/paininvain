@@ -133,6 +133,15 @@
         </nav>
       </div>
 
+      <!-- **************************************** -->
+      <!-- CHANGING THE VIDEO / IMAGE BACKGROUND-->
+      <!-- **************************************** -->
+
+      <!-- The video will play if the browser supports it. If not, it will default to the picture.-->
+      <!-- To change the video, put a new video in the 'video' folder, in mp4 format-->
+      <!-- Then change where it says 'video/hero-cropped-compressed.mp4' to the video/ the name of your video-->
+      <!-- If changing the image, leave the video part as is, and change where it says poster='img/piv-hero.jpg' to an image you've put in the 'img' folder -->
+
         <video playsinline webkit-playsinline autoplay loop muted defaultMuted oncontextmenu="return false;"  preload="auto"  class="video-bg" id="video-bg" poster="img/piv-hero.jpg">
               <source src="video/hero-cropped-compressed.mp4" type="video/mp4" alt="Pain in Vain latest music video.">
               <!-- <source src="video/hero-cropped-compressed.ogv" type="video/ogg" alt="PAIN IN VAIN BACKGROUND VIDEO">
@@ -147,6 +156,20 @@
         </div>
       </div>
       <div class="row no-gutters justify-content-center music-row">
+
+        <!-- *********************************** -->
+        <!-- ADDING MUSIC TO THE 'OUR MUSIC' SECTION -->
+        <!-- *********************************** -->
+
+        <!-- Copy the entire area marked below, **directly** below where it says 'TO HERE' -->
+
+        <!-- You can change the image where it says eg 'img src="img/immolation.jpg"'-->
+        <!-- Title should be fairly obvious, change in between the <h5> and </h5> tags eg where it says IMMOLATION-->
+        <!-- Number of tracks should be easy too, in between the <p> and </p> tags eg where it says 10 TRACKS-->
+        <!-- To change the link, see where it says href="...spotifylink...", just get your spotify link and add it in there-->
+
+        <!-- FROM HERE -->
+
         <div class="col-lg-3 col-sm-12 music-card ml-5 mr-5 myCard">
           <div class="card myCard">
             <img src="img/immolation.jpg" class="card-img-top" alt="Immolation by Pain in Vain." />
@@ -159,6 +182,9 @@
             </div>
           </div>
         </div>
+
+        <!-- TO HERE -->
+
         <div class="col-lg-3 col-sm-12 music-card ml-5 mr-5 myCard">
           <div class="card myCard">
             <img src="img/leave_me.jpg" class="card-img-top" alt="Leave Me EP by Pain in Vain." />
@@ -189,6 +215,13 @@
           <h1 class="hero-title align-self-center">
             ABOUT PAIN IN VAIN
           </h1>
+
+          <!-- *********************************** -->
+          <!-- CHANGING THE 'ABOUT' DESCRIPTION-->
+          <!-- *********************************** -->
+
+          <!-- Easy one, just make sure you only change the text between the <p> and </p> tags -->
+
           <p class="hero-text align-self-center text-center my-auto">
             PAIN IN VAIN is a Metal band founded by Mikey O' Riordan and Jake
             Black during summer 2014. They have gigged throughout many locations
@@ -208,8 +241,23 @@
         </div>
       </div>
     </div>
+
+    <!-- *************** -->
+    <!-- TO ADD A VIDEO-->
+    <!-- *************** -->
+
+    <!-- Adding another video within a row may break the layout, so you wmay want to copy and entire row and add a single video to it -->
+    <!-- Copy from 'BEGINNING OF ROW' to 'END OF ROW' and leave only 'START OF ONE VIDEO' to 'END OF ONE VIDEO' -->
+    <!-- To add the link you take the youtube embed eg: -->
+    <!-- https://www.youtube.com/embed/PgHXHsV9ZeM?rel=0&showinfo=0&autoplay=1 -->
+    <!-- And only copy the part after the 'embed/' as far as the '?rel' -->
+    <!-- So eg in that case you'd only copy 'PgHXHsV9ZeM' from that link -->
+    <!-- You then paste that into the video where it says 'data-embed='-->
+
     <div class="container video-container">
+      <!-- BEGINNING OF A ROW -->
       <div class="row no-gutters justify-content-center videos">
+        <!-- START OF ONE VIDEO -->
         <div class="col-lg-6 col-sm-12">
           <div class="card">
            <div class="youtube" data-embed="olz83r_eCKs">
@@ -217,6 +265,7 @@
           </div>
           </div>
         </div>
+        <!-- END OF ONE VIDEO -->
         <div class="col-lg-6 col-sm-12">
           <div class="card">
             <div class="youtube" data-embed="9maGpR8nJOw">
@@ -225,6 +274,7 @@
           </div>
         </div>
       </div>
+      <!-- END OF A ROW -->
       <div class="row no-gutters justify-content-center videos">
         <div class="col-lg-6 col-sm-12">
           <div class="card">
