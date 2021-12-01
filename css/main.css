@@ -207,7 +207,9 @@ iframe {
 [  ]*/
 
 .contact2-form {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contact2-form-title {
@@ -235,7 +237,7 @@ iframe {
   width: 100%;
 
   font-family: "EB Garamond";
-  font-size: 15px;
+  font-size: 1.25rem;
   color: #555555;
   line-height: 1.2;
 }
