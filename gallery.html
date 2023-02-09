@@ -82,7 +82,6 @@
         }
 
 
-
         input.input2 {
             height: 45px
         }
@@ -232,21 +231,21 @@
             resize: vertical
         }
 
-         h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6 {
             margin-bottom: .5rem;
             font-weight: 500;
             line-height: 1.2
         }
 
-         h1 {
+        h1 {
             font-size: 2.5rem
         }
 
-         h3 {
+        h3 {
             font-size: 1.75rem
         }
 
-         h5 {
+        h5 {
             font-size: 1.25rem
         }
 
@@ -277,7 +276,7 @@
             padding-left: 0
         }
 
- .col-12, .col-sm-12 col-md-4 col-sm-12, .col-6, .col-md-4 col-sm-12, .col-sm-12 {
+        .col-12, .col-sm-12 col-md-4 col-sm-12, .col-6, .col-md-4 col-sm-12, .col-sm-12 {
             position: relative;
             width: 100%;
             padding-right: 15px;
@@ -366,8 +365,6 @@
         }
 
 
-
-
         .p-0 {
             padding: 0 !important
         }
@@ -377,7 +374,7 @@
             margin-right: auto !important
         }
 
-         .mx-auto {
+        .mx-auto {
             margin-left: auto !important
         }
 
@@ -519,10 +516,10 @@
             <div class="modal-content gallery_image_container">
 
 
-                    <!-- images will be placed here by js -->
+                <!-- images will be placed here by js -->
 
-                    <a class="prev" alt="pain in vain gallery image" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" alt="pain in vain gallery image" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" alt="pain in vain gallery image" onclick={plusSlides(-1)}>&#10094;</a>
+                <a class="next" alt="pain in vain gallery image" onclick="plusSlides(1)">&#10095;</a>
 
 
             </div>
@@ -581,20 +578,39 @@
 <script src="nav.js"></script>
 
 <script>
-    const closeModal = () => {document.getElementById("myModal").style.display = "none";
-        const images =document.getElementsByClassName("mySlides")
-        const activeIndex = images.findIndex((img) => img.classList.contains('d-block'))
-        images[activeIndex].classList.remove('d-block')
+    // ✨ This could be improved further, but it's better than what it was ✨
+    const numImages = 125
+    const gic = document.getElementsByClassName("gallery_image_container");
+    const slides = document.getElementsByClassName("mySlides")
+
+    // Hide the entire modal container
+    const closeModal = () => document.getElementById("myModal").style.display = "none";
+
+    const plusSlides = (n) => {
+        let targetIndex;
+
+        // Find the index of the image within .mySlides which has a class of 'd-block', that's the target index
+        for (let i = 0; i < slides.length; i++) {
+            if (slides[i].classList.contains('d-block')) targetIndex = Array.prototype.indexOf.call(slides, slides[i])
+        }
+
+        // If we're on image 0, don't allow moving backwards, if on last image, don't allow forwards
+        if (n < 0 && targetIndex === 0 || n > 0 && targetIndex === numImages - 2) return
+
+        // Hide the currently visible image
+        slides[targetIndex].classList.remove('d-block')
+
+        // Forward pressed: n = 1, back pressed: n = -1 ; increment/decrement targetIndex accordingly, to display prev or next image
+        n > 0 ? targetIndex++ : targetIndex--
+
+        // Make the next (or previous) image visible
+        slides[targetIndex].classList.add('d-block')
     }
 
-    window.addEventListener('load', () => {
-
-    const gic = document.getElementsByClassName("gallery_image_container");
-    const numImages = 125
-
+    // iterate through divs which are used as containers
     for (let i = 0; i < gic.length; i++) {
         // iterate through children of containers
-        for(let j=1; j < numImages; j++){
+        for (let j = 1; j < numImages; j++) {
             if (gic[i].classList.contains("modal-content")) {
                 // create a new img element and append, do this for n number of images in the gallery
                 const img = document.createElement("img");
@@ -624,17 +640,15 @@
                 img.alt = "pain in vain gallery image";
                 img.setAttribute('id', j.toString())
 
+                // click listener to open modal when any image is clicked. every gallery image has an id, use this to decide which image to open in the modal (e.target.id -1)
                 imgContainer.addEventListener('click', (e) => {
-                    // remove d-block from all other images before adding to current one
-                    const slides = document.getElementsByClassName("mySlides")
-
-                    for(let i=0; i<slides.length; i++){
-                        if(slides[i].classList.contains('d-block')){
-                            slides[i].classList.remove('d-block')
-                        }
+                    // remove d-block from any other visible modal images before adding to current one (this will be the previously clicked gallery image)
+                    for (let i = 0; i < slides.length; i++) {
+                        if (slides[i].classList.contains('d-block')) slides[i].classList.remove('d-block')
                     }
+
                     document.getElementById('myModal').style.display = 'flex';
-                    document.getElementsByClassName("mySlides")[parseInt(e.target.id)-1].classList.add('d-block');
+                    document.getElementsByClassName("mySlides")[parseInt(e.target.id) - 1].classList.add('d-block');
                 })
 
                 // now append div/div/img to container
@@ -644,7 +658,6 @@
             }
         }
     }
-    })
 </script>
 
 
